@@ -33,8 +33,7 @@ const setting = {
 	traffic: 2,
 };
 
-
-record.textContent = `Рекорд: ${localStorage.getItem('raceScore', setting.score)}` ? `Рекорд :  ${localStorage.getItem('raceScore', setting.score)}` : record.textContent = `Рекорд: ${setting.score}`;
+record.textContent = localStorage.getItem('raceScore', setting.score) ? record.textContent = `Рекорд: ${localStorage.getItem('raceScore', setting.score)}` : record.textContent = `Рекорд: ${setting.score}`;
 
 const addLocalStorage = () => {
 	if (setting.score > localStorage.getItem('raceScore', setting.score)) {
