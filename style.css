@@ -45,6 +45,13 @@ table {
   display: none;
 }
 
+.game {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
 .car, .enemy {
 	position: absolute;
   width: 50px;
@@ -64,7 +71,6 @@ table {
 .line {
 	position: absolute;
 	width: 10px;
-	height: 50px;
 	background: #fff;
 	left: 145px;
 }
@@ -101,11 +107,23 @@ table {
 	font-weight: bold;
 }
 
+.record {
+	position: absolute;
+	top: 14%;
+	left: 25%;
+	padding: 10px 20px;
+	background: gold;
+	border-radius: 10px;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
 .hard {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	top: 20%;
+	top: 25%;
 	left: 24%;
 	padding: 10px 20px;
 	background: gold;
